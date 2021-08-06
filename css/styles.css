@@ -1,0 +1,104 @@
+/* General */
+html,
+body {
+    font-family: Raleway;
+}
+
+.header {
+    display: grid;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+}
+.headerImg {
+    grid-area: logo;
+    padding: 0 2rem;
+    height: 2.813rem;
+}
+.headerNav {
+    display: flex;
+    align-items: center;
+    grid-area: navbar;
+}
+.headerNavLink {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-weight: 500;
+    text-align: center;
+    transition-duration: 0.1s;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
+}
+
+
+.decorationNone {
+    text-decoration: none;
+}
+.bordureNone {
+    border-style : none;
+
+
+/* tete de page*/
+/*HEADER*/
+
+}
+.nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+}
+a:hover {
+    color: brown;
+    text-decoration: none;
+}
+
+.sizeLiens { 
+    width: 45%;   
+}
+.sizeLien {
+    width: 140px;
+    height: 100px;
+}
+.colorLien13 {
+    color: blue;
+}
+.colorLien2 {
+    color: brown;
+}
+
+.bordureNav {
+    border-top: 1px solid blue; 
+}
+.bordureNav23 {
+    border: 1px solid transparent;
+}
+.headerImg {
+    margin-bottom: 7px;
+}
+
+
+body {
+    margin: 10px;
+}
+    
+/*barre de recherche*/
+/*SEARCH*/
+
+.h1 {
+    font-weight: bold;
+}
+
+
+/*FILTER*/
+
+.a:hover {
+    color: brown;
+    text-decoration: none;
+
+}
+
+/*HOSTING*/
+
+/*ACTIVITY*/
