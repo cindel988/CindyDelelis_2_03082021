@@ -2,16 +2,16 @@
 /* General */
 html,
 body {
-    font-family: "Raleway", "Sans serif";
-    margin: 8px;
-    display: block;
+    font-family: "Raleway", "Sans serif"; /*change la couleur*/
+    margin: 8px; /*ajoute une marge autour de l'élément*/
+    display: block; /*modifier le type de rendu d'un élément*/
 }
 img {
-    max-width: 100%;
+    max-width: 100%; /*largeur maximum de l'élément*/
 }
 a{
-    color: black;
-    text-decoration: none;
+    color: black; /*change la couleur*/
+    text-decoration: none; /*décorer le texte*/
     
 }
 a:hover {
@@ -26,29 +26,30 @@ a:hover {
 
 .header {
   display: grid;
-  align-items: center;
+  align-items: center; /*redefinir l'alignement*/
   max-width: 1440px;
   margin: auto;
 }
 .headerImg {
-  grid-area: logo;
-  padding: 0 2rem;
-  height: 2.813rem;
+  grid-area: logo; /*définir taille et emplacement dans la grille*/
+  padding: 0 2rem; /*ajoute de l'espace à l'intérieur de l'élément*/
+  height: 2.813rem; /*hauteur de l'élément*/
 }
 .headerNav {
   display: flex;
   align-items: center;
   grid-area: navbar;
 }
+
 .headerNavLink {
   padding: 2rem;
-  font-weight: 500;
-  text-align: center;
-  transition-duration: 0.1s;
-  border-top: 3px transparent solid;
-  border-bottom: 3px transparent solid;
+  font-weight: 500; /*définir la graisse utilisée pour le texte*/
+  text-align: center; /*alignement du texte*/
+  transition-duration: 0.1s;/*définit le nombre de secondes ou de millisecondes que doit durer une animation*/
+  border-top: 3px transparent solid; /*bordure haut*/
+  border-bottom: 3px transparent solid; /*bordure bas*/
 }
-.headerNavLink[data-active=true] {
+.headerNavLink [data-active-true]{
   color: #0065FC;
 }
 .headerNavLink:hover {
@@ -64,10 +65,10 @@ a:hover {
 }
 @media screen and (min-width: 601px) {
   .header {
-    grid-template-columns: auto 1fr auto auto;
-    grid-template-areas: "logo . navbar button";
+    grid-template-columns: auto 1fr auto auto; /*définit les noms des lignes et les fonctions de taille*/
+    grid-template-areas: "logo . navbar button"; /*définit des zones de grille nommées*/
   }
-  .headerNavLink[data-active=true] {
+  .headerNavLink [data-active-true] {
     border-top: 3px solid #0065FC;
   }
   .headerNavLink:hover {
@@ -93,7 +94,7 @@ a:hover {
     border-bottom: 3px solid #F2F2F2;
     width: 50%;
   }
-  .headerNavLink[data-active=true] {
+  .headerNavLink [data-active-true]{
     border-bottom-color: #0065FC;
   }
   .headerNavLink:hover {
@@ -104,23 +105,23 @@ a:hover {
   max-width: 1440px;
   margin: auto;
   padding: 0 2rem;
-  box-sizing: border-box;
+  box-sizing: border-box; /*la façon dont la hauteur et la largeur totale d'un élément est calculée*/
 }
 .searchHeaderTitle {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem; /*marge du bas*/
 }
 .searchHeaderSubtitle {
-  margin-top: 0;
+  margin-top: 0; /*marge du haut*/
 }
 .searchForm {
   display: inline-flex;
   max-width: 100%;
-  overflow: auto;
+  overflow: auto; /*définit comment gérer le dépassement du contenu d'un élément dans son bloc*/
 }
 .searchFormWrapicon {
-  background-color: #F2F2F2;
+  background-color: #F2F2F2; /*change la couleur du fond*/
   padding: 1rem 1.25rem;
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 1rem 0 0 1rem; /*spécifier la courbe de l'arrondi*/
   text-align: center;
 }
 .searchFormWrapiconIcon {
@@ -134,7 +135,7 @@ a:hover {
   padding: 0 1.5rem;
   box-sizing: border-box;
   width: 14rem;
-  font-size: 1rem;
+  font-size: 1rem; /*change la taille de la police*/
   font-weight: bold;
   font-family: "Raleway", "Sans serif";
 }
@@ -157,7 +158,7 @@ a:hover {
 .searchFilters {
   display: flex;
   margin-top: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*diviser l'élément flex en plusieurs lignes*/
 }
 .searchFiltersTitle {
   margin: 0 2rem 1rem 0;
@@ -180,7 +181,7 @@ a:hover {
 }
 .searchFiltersFilter:hover {
   background-color: #f3f8ff;
-  transform: scale(1.015);
+  transform: scale(1.015); /*agrandir ou réduire d'échelle d'un élément*/
 }
 .searchFiltersFilterWrapicon {
   background-color: #DEEBFF;
@@ -191,7 +192,7 @@ a:hover {
   min-width: 3.5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /*espace réparti entre et autour des éléments*/
   margin: -2px;
 }
 .searchFiltersFilterWrapiconIcon {
@@ -254,6 +255,9 @@ a:hover {
     display: none !important;
   }
 }
+
+/*HOSTING*/
+
 .hostingWrapper, .hostingPopular, .hostingMain {
   background-color: #F2F2F2;
   border-radius: 1.5rem;
@@ -287,9 +291,9 @@ a:hover {
 }
 figure {
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
+  margin-block-start: 1em; /*marge logique appliquée au début des éléments en bloc*/
+  margin-block-end: 1em; /*marge logique appliquée à la des éléments en bloc*/
+  margin-inline-start: 40px; /*marge de début en ligne logique d'un élément*/
   margin-block-end: 40px;
 }
 .hostingMainCardFigure {
@@ -315,10 +319,10 @@ figure {
 .hostingMainCardGrade {
   margin: 0 0.75rem 0.25rem 0.75rem;
 }
-.hostingMainCardGradeIcon[data-active=true] {
+.hostingMainCardGradeIcon [data-active-true]{
   color: #0065FC;
 }
-.hostingMainCardGradeIcon[data-active=false] {
+.hostingMainCardGradeIcon [data-active-false]{
   color: #d9d9d9;
 }
 .blue_star {
@@ -330,14 +334,21 @@ figure {
 .hostingMainViewmore {
   font-weight: bold;
 }
-.hostingPopular {
-  display: grid;
+
+/*HOSTING_POPULAR*/
+
+aside.hostingPopular {
+  column-gap: 2rem;
   row-gap: 2rem;
-  align-items: start;
-  grid-template-rows: auto repeat(3, 1fr);
+}
+
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
 }
 .hostingPopularTitle {
-  margin: 0;
+  margin: 1;
   display: flex;
   justify-content: space-between;
 }
@@ -377,10 +388,11 @@ figure {
     row-gap: 2rem;
   }
   .hostingPopular {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 10rem;
-    column-gap: 2rem;
     grid-row-start: 1;
+  }
+  .thumbs {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
   }
   .hostingPopularTitle {
     grid-column: 1/-1;
@@ -398,6 +410,7 @@ figure {
 }
 @media (max-width: 650px) {
   .hostingMain {
+    display: contents;
     grid-template-columns: 1fr;
   }
 }
@@ -407,6 +420,18 @@ figure {
     grid-template-rows: auto repeat(3, 9rem);
   }
 }
+@media (max-width: 650px) {
+  .thumbs {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1441px) {
+  .thumbs {
+    grid-template-columns: 1fr;
+  }
+}
+/*ACTIVITY*/
+
 .activity {
   display: grid;
   column-gap: 2rem;
