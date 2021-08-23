@@ -338,14 +338,21 @@ figure {
 /*HOSTING_POPULAR*/
 
 aside.hostingPopular {
-  column-gap: 2rem;
-  row-gap: 2rem;
+  display: grid;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .thumbs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+
 }
 .hostingPopularTitle {
   margin: 1;
@@ -354,8 +361,8 @@ aside.hostingPopular {
 }
 .hostingPopularWrapcontent {
   display: flex;
-  align-items: stretch;
   height: 100%;
+  align-items: stretch;
   overflow: auto;
 }
 .hostingPopularWrapcontentWrapimg {
